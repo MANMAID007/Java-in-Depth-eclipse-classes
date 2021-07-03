@@ -6,8 +6,6 @@ public class User {
 	private String lastName;
 	private String gender;
 	private String email;
-	private long patientId;
-	private boolean insured;
 	private long stuffId;
 	private int yearsOfExperience;
 	private String description;
@@ -54,22 +52,6 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public long getPatientId() {
-		return patientId;
-	}
-
-	public void setPatientId(long patientId) {
-		this.patientId = patientId;
-	}
-
-	public boolean isInsured() {
-		return insured;
-	}
-
-	public void setInsured(boolean insured) {
-		this.insured = insured;
 	}
 
 	public long getStuffId() {
