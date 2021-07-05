@@ -6,10 +6,8 @@ public class User {
 	private String lastName;
 	private String gender;
 	private String email;
-	private long stuffId;
-	private int yearsOfExperience;
-	private String description;
-	private double salary;
+	private boolean insured;
+	private HealthInsurancePlan insurancePlan;
 	private long doctorId;
 	private String specialization;
 	private long nurseId;
@@ -53,37 +51,21 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public long getStuffId() {
-		return stuffId;
+	
+	public boolean isInsured() {
+		return insured;
 	}
 
-	public void setStuffId(long stuffId) {
-		this.stuffId = stuffId;
+	public void setInsured(boolean insured) {
+		this.insured = insured;
 	}
 
-	public int getYearsOfExperience() {
-		return yearsOfExperience;
+	public HealthInsurancePlan getInsurancePlan() {
+		return insurancePlan;
 	}
 
-	public void setYearsOfExperience(int yearsOfExperience) {
-		this.yearsOfExperience = yearsOfExperience;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public double getSalary() {
-		return salary;
-	}
-
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+		this.insurancePlan = insurancePlan;
 	}
 
 	public long getDoctorId() {
