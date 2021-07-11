@@ -19,7 +19,7 @@ public abstract class HealthInsurancePlan {
 	public void setOfferedBy(InsuranceBrand offeredBy) {
 		this.offeredBy = offeredBy;
 	}
-	
-	public abstract double computeMonthlyPremium(double salary);
+
+	public abstract double computeMonthlyPremium(double salary,  int age, boolean smoking);
 
 }

@@ -8,6 +8,8 @@ public class User {
 	private String email;
 	private boolean insured;
 	private HealthInsurancePlan insurancePlan;
+	private int age;
+	private boolean smoker;
 	private long doctorId;
 	private String specialization;
 	private long nurseId;
@@ -66,6 +68,22 @@ public class User {
 
 	public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
 		this.insurancePlan = insurancePlan;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public boolean isSmoker() {
+		return smoker;
+	}
+
+	public void setSmoker(boolean smoker) {
+		this.smoker = smoker;
 	}
 
 	public long getDoctorId() {
